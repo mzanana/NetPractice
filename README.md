@@ -2,7 +2,7 @@
 
 <h1 align="center"><b>NetPractice</b></h1>
 
-> **This project is a practical exercise to discover the basics of networking.**  
+> **The goal from this project to discover networking.**    
 
 # Definitions
 
@@ -42,6 +42,39 @@ The server role is to listen for a requests and then fulfill those requests.
 Is a device or a software that **initiates communication** by **requesting** a service, resource or data from a **server**.  It can be from any end-user device, like desktop, laptop, smartphone or tablet, ...etc.  
 
 <p align="center">
-	<img src="assets/Client-Server.jpg" width="300">
+	<img src="assets/Client-Server.jpg" width="400">
+</p>
+
+## Network Types 
+
+### Types by Scale
+
+#### **PAN :**  
+PAN stand for **Personal Area Network** and it is just a few meters like the Bluetooth, syncing a phone to a laptop.   
+<p align="center">
+	<img src="assets/PAN.png" width="400">
+</p>
+#### **LAN :**
+LAN stand for Local Area Network for a single room, home, office, building or campus. A typical home Wi-Fi network or all computers in a school library.   
+<p align="center">
+	<img src="assets/LAN.png" width="400">
+</p>
+
+#### **MAN :** 
+MAN is Metropolitan Area Network used on the large cities or large geographical area covering several buildings. Connecting multiple university campuses across city.  
+<p align="center">
+	<img src="assets/MAN.png" width="400">
+</p>
+
+#### **CAN :**  
+CAN stand for Campus Area Network, it is a fixed area like a corporate or university campus, often consider a larger type of LAN or a small MAN.  
+<p align="center">
+	<img src="assets/CAN.png" width="400">
+</p>
+
+#### **WAN :**  
+WAN is the Wide Area Network for the large indefinite area, connecting cities, countries or continents. The **internet** is the largest public WAN corporate network connecting branch office globally.  
+<p align="center">
+	<img src="assets/WAN.png" width="400">
 </p>
 
