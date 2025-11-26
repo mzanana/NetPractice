@@ -4,3 +4,4 @@
 
 > **This project is a practical exercise to discover the basics of networking.**  
 
+![image](.images/tcp-ip.png)
