@@ -21,7 +21,7 @@ A **network** is a system of **interconnected** elements (nodes, points or peopl
 A **Computer Network** is a group of two or more interconnected computing devices (such as computers, servers, printers and other peripherals) that are linked together to **share resources, exchange files, and allow electronic communication**.  
 
 <p align="center">
-	<img src="assets/Computer-network.jpg" width="300">
+	<img src="assets/Computer-Network.jpg" width="300">
 </p>
 
 ## Client-Server Model
@@ -42,6 +42,6 @@ The server role is to listen for a requests and then fulfill those requests.
 Is a device or a software that **initiates communication** by **requesting** a service, resource or data from a **server**.  It can be from any end-user device, like desktop, laptop, smartphone or tablet, ...etc.  
 
 <p align="center">
-	<img src="assets/Client-Server.jpg" width="300">
+	<img src="assets/Client-server.jpg" width="300">
 </p>
 
