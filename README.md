@@ -4,7 +4,15 @@
 
 > **This project is a practical exercise to discover the basics of networking.**  
 
+# Definitions
+
+## Network & Computer Network
+
+### Network meaning in general 
+
+A **network** is a system of **interconnected** elements (nodes, points or people, ...etc) designed to facilitate the movement or exchange of resources, information or communication between them.  
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/mzanana/NetPractice/refs/heads/main/.images/tcp-ip.png?token=GHSAT0AAAAAADP6VB6NB2RFX6V4GXRI6TO22JGY7KA" width=650>
+	<img src="assets/Network.png" width="400">
 </p>
+
