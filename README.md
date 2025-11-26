@@ -42,7 +42,7 @@ The server role is to listen for a requests and then fulfill those requests.
 Is a device or a software that **initiates communication** by **requesting** a service, resource or data from a **server**.  It can be from any end-user device, like desktop, laptop, smartphone or tablet, ...etc.  
 
 <p align="center">
-	<img src="assets/Client-Server.jpg" width="400">
+	<img src="assets/Client-server.jpg" width="400">
 </p>
 
 ## Network Types 
@@ -54,6 +54,7 @@ PAN stand for **Personal Area Network** and it is just a few meters like the Blu
 <p align="center">
 	<img src="assets/PAN.png" width="400">
 </p>
+
 #### **LAN :**
 LAN stand for Local Area Network for a single room, home, office, building or campus. A typical home Wi-Fi network or all computers in a school library.   
 <p align="center">
