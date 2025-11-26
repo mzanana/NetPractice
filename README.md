@@ -21,7 +21,7 @@ A **network** is a system of **interconnected** elements (nodes, points or peopl
 A **Computer Network** is a group of two or more interconnected computing devices (such as computers, servers, printers and other peripherals) that are linked together to **share resources, exchange files, and allow electronic communication**.  
 
 <p align="center">
-	<img src="assets/Computer-network.jpg" width="300">
+	<img src="assets/Computer-Network.jpg" width="300">
 </p>
 
 ## Client-Server Model
