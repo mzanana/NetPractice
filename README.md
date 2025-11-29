@@ -1,3 +1,4 @@
+
 <h1 align="center"><b>NetPractice</b></h1>
 
 > **The goal from this project to discover networking.**    
@@ -44,57 +45,57 @@ Is a device or a software that **initiates communication** by **requesting** a s
 	<img src="assets/Client-server.webp" width="400">
 </p>
 
-## Network Types 
+# Network Types 
 
-### Types by Scale
+## Types by Scale
 
-#### **PAN :**  
+### **PAN :**  
 PAN stand for **Personal Area Network** and it is just a few meters like the Bluetooth, syncing a phone to a laptop.   
 <p align="center">
 	<img src="assets/PAN.webp" width="400">
 </p>
 
-#### **LAN :**
+### **LAN :**
 LAN stand for Local Area Network for a single room, home, office, building or campus. A typical home Wi-Fi network or all computers in a school library.   
 <p align="center">
 	<img src="assets/LAN.webp" width="400">
 </p>
 
-#### **MAN :** 
+### **MAN :** 
 MAN is Metropolitan Area Network used on the large cities or large geographical area covering several buildings. Connecting multiple university campuses across city.  
 <p align="center">
 	<img src="assets/MAN.webp" width="400">
 </p>
 
-#### **CAN :**  
+### **CAN :**  
 CAN stand for Campus Area Network, it is a fixed area like a corporate or university campus, often consider a larger type of LAN or a small MAN.  
 <p align="center">
 	<img src="assets/CAN.webp" width="400">
 </p>
 
-#### **WAN :**  
+### **WAN :**  
 WAN is the Wide Area Network for the large indefinite area, connecting cities, countries or continents. The **internet** is the largest public WAN corporate network connecting branch office globally.  
 <p align="center">
 	<img src="assets/WAN.webp" width="400">
 </p>
 
 
-### Network types by Topology (Structure)
+## Network types by Topology (Structure)
 
 Topology refers to the physical or logical arrangement of nodes (devices) and the connections (cables/links) between them.  
 <p align="center">
 	<img src="assets/Topology.webp" width="400">
 </p>
 
-## Network Equipment 
+# Network Equipment 
 
-### Repeater 
+## Repeater 
 Its role is to regenerates the weakened network signals to extend the signal's reach over longer distances, the repeater contain only two ports.    
 <p align="center">
 	<img src="assets/repeater.webp" width="500">
 </p>
 
-### Hub  
+## Hub  
 Is a multi ports repeater, that broadcasts **any** incoming signal to **all** other ports, without exceptions, so if the sender want to send a message to RECEIVER-3, the Hub send this message to all the RECEIVERS connected to the HUB.
 
 <p align="center">
@@ -103,7 +104,7 @@ Is a multi ports repeater, that broadcasts **any** incoming signal to **all** ot
 	<img src="assets/HUB.webp" width="400">
 </p>
 
-### Switch
+## Switch
 A multi ports RJ45, which connect devices within a single network (LAN). Intelligently forwards data frames based on **mac addresses**, so if a sender want to send a message to RECEIVER-3, even if there is 52 other device plugged in to the switch, only the RECEIVER-3 which gonna get the message.  
 So the Switch is much more secure the HUB!  
 <p align="center">
@@ -112,5 +113,22 @@ So the Switch is much more secure the HUB!
 	<img src="assets/switch.webp" width="500">
 </p>
 
-**How The Switch Works ?**  
-Each end
+**What is MAC address ?**  
+Each end-device has it's own **mac address** which stand for Media Access Control and it is a **unique hardware identifier** assigned to a network interface controller (NIC) the physical component that allow a device to connect to a network;  
+<p align="center">
+	<img src="assets/mac-address.webp" width="400">
+</p>
+
+Unlike the **IP** address which is used for global routing, the MAC address is only used for **local communication** within a single LAN segment;  
+### How the Switch Works
+The internal memory of the switch is called **MAC Address Table** which contain two rows, the port number and the MAC address of the connected device. When the switch powered on the table been empty.   
+<p align="center">
+	<img src="assets/mac-table.webp" width="250">
+</p>
+
+When a frame arrives on a switch port, the switch reads the **MAC addresses** from the frame's header and fill the table with this **MAC** address and the specific ports the frame was received on, so it knows the port and the MAC address of the source and the destination from the frame.    
+<p align="center">
+	<img src="assets/mac-table2.webp" width="250">
+</p>
+
+Over time, as devices communicate, the switch fills the entire table.   
