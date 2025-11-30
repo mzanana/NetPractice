@@ -132,3 +132,22 @@ When a frame arrives on a switch port, the switch reads the **MAC addresses** fr
 </p>
 
 Over time, as devices communicate, the switch fills the entire table.   
+
+## Bridge
+The bridge purpose is to filter, segment and connect two disparate LANs. The bridge contain only two ports.  
+<p align="center">
+	<img src="assets/bridge2.webp" width="150">
+	<br>
+	<img src="assets/bridge.webp" width="350">
+</p>
+
+### Network Traffic Types
+Network traffic define the relationship between the sender and the receiver(s) on a **network**.  
+There is three main traffic types that a network switch handles :   
++ **Unicast :**  It is one-to-one transmission from a single source to a single specific destination;  
++ **Multicast :**  Sending a message to a specific **group** of devices;   
++ **Broadcast :**  Send a message fro one device to **all** the other devices on the same local network, the frame uses a specific destination MAC address : `FF:FF:FF:FF:FF:FF`;  
+
+<p align="center">
+	<img src="assets/traffic-types.webp" width="350">
+</p>
