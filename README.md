@@ -159,6 +159,20 @@ The router is a networking device that connect **different Networks** together, 
 <p align="center">
 	<img src="assets/destination.png" width="450">
 </p>
+There are three routing types :  
++ **Directly Connected :**  Lets say we connect two networks separated by a router, each one with a specific **IP** address, the router will create automatically the router table with the directly connected routes.  
+  When a computer on a `192` network want to connect with a computer on a `10` network, the computer sent a data packet to the router, and the router looks for the destination IP address of the packet, the router looks at the routing table and decide to forward the data out the interface  `Eth1` then to the intended computer.  
+<p align="center">
+	<img src="assets/directly-connected.png" width="550">
+</p>
+
++ **Static route :** Static routes are manually configured by a network administrator. 
+  Lets say the router is connected to another network with the IP `174`, if a computer from the `192` want to connect with a computer from the `174` the router gonna search on the routing table for the interface with this IP address and gonna fail, that when the administrator add the new network `174` to the routing table so the computers of the network `192` could connect with the computers on the network `174`. So to connect back an administrator should add the interface at the other router so the computers on the `174` network could connect to the `192` network computers.  
+	<p align="center">
+		<img src="assets/static.png" width="550">
+	</p>
++ **Dynamic routes :** Are similar to the static routes the way it works, the difference is how the routing table is filled, on static routes we fill the table manually but on the dynamic routes we use some protocols so the routing table fill itself automatically, some protocols are : `RIP, OSPF, BGP, IS-IS and EIGPR`.
+  So what happen is the routers talk with each other and share their routing tables with each other.  
 
 ## Bridge
 The bridge purpose is to filter, segment and connect two disparate LANs. The bridge contain only two ports.  
