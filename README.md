@@ -178,6 +178,12 @@ There are three routing types :
 
 + **Forwarding the packet :**  Once the router knows the best route, the router sends the data packet out through the appropriate network interface.  
 
+### wireless access point
+A wireless access point **relays** data between a wired network and wireless devices
+	<p align="center">
+		<img src="assets/wap1.png" width="450">
+	</p>
+**Wireless APs** are used primarily by medium and large organisations, they have multiple APs to make sure it covers the entire building
 
 ## Bridge
 The bridge purpose is to filter, segment and connect two disparate LANs. The bridge contain only two ports.  
