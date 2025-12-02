@@ -173,6 +173,11 @@ There are three routing types :
 	</p>
 + **Dynamic routes :** Are similar to the static routes the way it works, the difference is how the routing table is filled, on static routes we fill the table manually but on the dynamic routes we use some protocols so the routing table fill itself automatically, some protocols are : `RIP, OSPF, BGP, IS-IS and EIGPR`.
   So what happen is the routers talk with each other and share their routing tables with each other.  
+### How the Router works
++ **Determining the best path :**  When a data packet arrives, the router gets the destination IP address from the header of the packet, then it consult the **routing table** which is a map of network paths to determine the most efficient route and to forward the packet closer to its final destination.  
+
++ **Forwarding the packet :**  Once the router knows the best route, the router sends the data packet out through the appropriate network interface.  
+
 
 ## Bridge
 The bridge purpose is to filter, segment and connect two disparate LANs. The bridge contain only two ports.  
