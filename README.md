@@ -87,6 +87,18 @@ Topology refers to the physical or logical arrangement of nodes (devices) and th
 	<img src="assets/Topology.webp" width="400">
 </p>
 
+## Network Traffic Types
+Network traffic define the relationship between the sender and the receiver(s) on a **network**.  
+There is three main traffic types that a network switch handles :   
++ **Unicast :**  It is one-to-one transmission from a single source to a single specific destination;  
++ **Multicast :**  Sending a message to a specific **group** of devices;   
++ **Broadcast :**  Send a message fro one device to **all** the other devices on the same local network, the frame uses a specific destination MAC address : `FF:FF:FF:FF:FF:FF`;  
+
+<p align="center">
+	<img src="assets/traffic-types.webp" width="350">
+</p>
+
+
 # Network Equipment 
 
 ## Repeater 
@@ -133,6 +145,16 @@ When a frame arrives on a switch port, the switch reads the **MAC addresses** fr
 
 Over time, as devices communicate, the switch fills the entire table.   
 
+## Router 
+The router is a networking device that connect **different Networks** together, it acts as a gateway, connecting **LAN** to **WAN** for example connecting the home network with the internet .  
+**Hubs & Switches** are used to **create** networks. while **Routers** are used to **connect** networks.  
+
+<p align="center">
+	<img src="assets/router2.webp" width="150">
+	<br>
+	<img src="assets/router3.webp" width="550">
+</p>
+
 ## Bridge
 The bridge purpose is to filter, segment and connect two disparate LANs. The bridge contain only two ports.  
 <p align="center">
@@ -141,13 +163,3 @@ The bridge purpose is to filter, segment and connect two disparate LANs. The bri
 	<img src="assets/bridge.webp" width="350">
 </p>
 
-### Network Traffic Types
-Network traffic define the relationship between the sender and the receiver(s) on a **network**.  
-There is three main traffic types that a network switch handles :   
-+ **Unicast :**  It is one-to-one transmission from a single source to a single specific destination;  
-+ **Multicast :**  Sending a message to a specific **group** of devices;   
-+ **Broadcast :**  Send a message fro one device to **all** the other devices on the same local network, the frame uses a specific destination MAC address : `FF:FF:FF:FF:FF:FF`;  
-
-<p align="center">
-	<img src="assets/traffic-types.webp" width="350">
-</p>
