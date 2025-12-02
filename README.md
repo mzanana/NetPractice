@@ -154,6 +154,11 @@ The router is a networking device that connect **different Networks** together, 
 	<br>
 	<img src="assets/router3.webp" width="550">
 </p>
+### Routing Table
+**Routers** use **Internet Protocol (IP)** for routing process.  Routers route data by using the routing table which is like a road map of a car, so the data can travel across the internet and reach its destination it needs **directions** to determine how to get there.  
+<p align="center">
+	<img src="assets/destination.png" width="450">
+</p>
 
 ## Bridge
 The bridge purpose is to filter, segment and connect two disparate LANs. The bridge contain only two ports.  
