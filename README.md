@@ -213,3 +213,23 @@ Between 1960s and 1970s, computer networks were often closed, for example **IBM*
 
 To solve this problem, the **ISO** (International Organisation for Standardization) developed the **OSI** model in 1984 to create a universal blueprint that all the hardware and software manufacturers could follow. By defining **seven distinct layers**.  
 
+## OSI Model
+
+**OSI** Stand for Open System Interconnecting, the purpose of this model to allow different systems to communicate smoothly regardless of their internal architecture, hardware or software.  
+
+The **OSI** model standardize the functions of communication system into **Seven Layers :**  
+<p align="center">
+	<img src="assets/osilayers.webp" width="350">
+</p>
+
+### Application Layer
+The **application layer** is the primary interface between the user's software application and the network services required to exchange data, it contain the protocols that define the rules for application-level communication, for example when browsing google chrome we use the HTTP protocol to talk across the network.  
+
+**What is a protocol ?**  
+Protocols is a standardized set of rules between two or more devices so they could communicate with each other,  just as humans speaks a specific language to communicate, also the computers needs protocols to ensure they can correctly format, transmit, receive and interpret the data they exchange. 
+
+Most used protocols :  
++ **HTTP/HTTPS :** Used by web browsers to request and display web pages (Application Layer);   
++ **IP (Internet Protocol) :** Define the addressing system and routes data packets across the entire internet ( Network Layer);  
++ **TCP :** Ensure data is delivered in accurate way, checking errors, resending lost data and ensuring packets arrive in the **correct** order (Transport Layer);   
++ **DNS, FTP, SSH, SMTP ...etc**
