@@ -49,31 +49,31 @@ Is a device or a software that **initiates communication** by **requesting** a s
 
 ## Types by Scale
 
-### **PAN :**  
+### PAN
 PAN stand for **Personal Area Network** and it is just a few meters like the Bluetooth, syncing a phone to a laptop.   
 <p align="center">
 	<img src="assets/PAN.webp" width="400">
 </p>
 
-### **LAN :**
+### LAN
 LAN stand for Local Area Network for a single room, home, office, building or campus. A typical home Wi-Fi network or all computers in a school library.   
 <p align="center">
 	<img src="assets/LAN.webp" width="400">
 </p>
 
-### **MAN :** 
+### MAN
 MAN is Metropolitan Area Network used on the large cities or large geographical area covering several buildings. Connecting multiple university campuses across city.  
 <p align="center">
 	<img src="assets/MAN.webp" width="400">
 </p>
 
-### **CAN :**  
+### CAN
 CAN stand for Campus Area Network, it is a fixed area like a corporate or university campus, often consider a larger type of LAN or a small MAN.  
 <p align="center">
 	<img src="assets/CAN.webp" width="400">
 </p>
 
-### **WAN :**  
+### WAN   
 WAN is the Wide Area Network for the large indefinite area, connecting cities, countries or continents. The **internet** is the largest public WAN corporate network connecting branch office globally.  
 <p align="center">
 	<img src="assets/WAN.webp" width="400">
@@ -157,19 +157,19 @@ The router is a networking device that connect **different Networks** together, 
 ### Routing Table
 **Routers** use **Internet Protocol (IP)** for routing process.  Routers route data by using the routing table which is like a road map of a car, so the data can travel across the internet and reach its destination it needs **directions** to determine how to get there.  
 <p align="center">
-	<img src="assets/destination.png" width="450">
+	<img src="assets/destination.webp" width="450">
 </p>
 There are three routing types :  
 + **Directly Connected :**  Lets say we connect two networks separated by a router, each one with a specific **IP** address, the router will create automatically the router table with the directly connected routes.  
   When a computer on a `192` network want to connect with a computer on a `10` network, the computer sent a data packet to the router, and the router looks for the destination IP address of the packet, the router looks at the routing table and decide to forward the data out the interface  `Eth1` then to the intended computer.  
 <p align="center">
-	<img src="assets/directly-connected.png" width="550">
+	<img src="assets/directly-connected.webp" width="550">
 </p>
 
 + **Static route :** Static routes are manually configured by a network administrator. 
   Lets say the router is connected to another network with the IP `174`, if a computer from the `192` want to connect with a computer from the `174` the router gonna search on the routing table for the interface with this IP address and gonna fail, that when the administrator add the new network `174` to the routing table so the computers of the network `192` could connect with the computers on the network `174`. So to connect back an administrator should add the interface at the other router so the computers on the `174` network could connect to the `192` network computers.  
 	<p align="center">
-		<img src="assets/static.png" width="550">
+		<img src="assets/static.webp" width="550">
 	</p>
 + **Dynamic routes :** Are similar to the static routes the way it works, the difference is how the routing table is filled, on static routes we fill the table manually but on the dynamic routes we use some protocols so the routing table fill itself automatically, some protocols are : `RIP, OSPF, BGP, IS-IS and EIGPR`.
   So what happen is the routers talk with each other and share their routing tables with each other.  
@@ -178,10 +178,10 @@ There are three routing types :
 
 + **Forwarding the packet :**  Once the router knows the best route, the router sends the data packet out through the appropriate network interface.  
 
-### wireless access point
+## wireless access point
 A wireless access point **relays** data between a wired network and wireless devices
 	<p align="center">
-		<img src="assets/wap1.png" width="450">
+		<img src="assets/wap1.webp" width="450">
 	</p>
 **Wireless APs** are used primarily by medium and large organisations, they have multiple APs to make sure it covers the entire building
 
