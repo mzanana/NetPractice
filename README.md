@@ -193,3 +193,8 @@ The bridge purpose is to filter, segment and connect two disparate LANs. The bri
 	<img src="assets/bridge.webp" width="350">
 </p>
 
+## Bandwidth & Throughput
++ **Bandwidth :** Is the theoretical maximum capacity of a network connection, the upper limit of the amount of data that could potentially be transferred over a connection in a specific amount of time.  
+  It is measured in **bits per second**, Mbps or Gbps.
++ **Throughput :** The actual amount of data **successfully** transmitted over a network connection in a specific amount of time.  
+
