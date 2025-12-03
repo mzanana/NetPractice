@@ -198,3 +198,18 @@ The bridge purpose is to filter, segment and connect two disparate LANs. The bri
   It is measured in **bits per second**, Mbps or Gbps.
 + **Throughput :** The actual amount of data **successfully** transmitted over a network connection in a specific amount of time.  
 
+<p align="center">
+	<img src="assets/bandwidth.webp" width="450">
+</p>
+
+# Computer Network Models 
+
+There are two main computer network models that serve as reference for understanding and designing how data flows : the **OSI Model** and the **TCP/IP Model**.  
+
+The **TCP/IP Model** is the one actually used for the internet and modern networks, while the **OSI Model** is more detailed, **theoretical** model primarily used for teaching and troubleshooting purposes.  
+
+## Problem the models solved
+Between 1960s and 1970s, computer networks were often closed, for example **IBM** networks could only talk to other IBM networks. If a business bought hardware from different manufactures, those systems **could not** communicate with each other, so they are **forced** to buy all their networking equipment from a single company.   
+
+To solve this problem, the **ISO** (International Organisation for Standardization) developed the **OSI** model in 1984 to create a universal blueprint that all the hardware and software manufacturers could follow. By defining **seven distinct layers**.  
+
