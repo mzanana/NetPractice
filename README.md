@@ -331,3 +331,26 @@ The UDP header is extremely simple, it contain only four fields :
 	<img src="assets/udpheader.webp" width="400">
 </p>
 
+## Network Layer
+Four important thing that happen on the Network Layer :  
+### Logical Addressing 
+#### Problem solved
+We used to have a connection between devices in a local network segment using the **MAC Addresses**, the problem they can't be used to address a device across the global internet.  
+
+#### Solution
+The Network Layer uses **IP Addresses** for addressing because they are logical assigned by a network administrator or ISP.  
+The protocols used are primarily **IPv4** and **IPv6**;  
+
+### Routing
+**Routers** use routing table and routing protocols to determine the optimal path for each packet to send data based on it destination IP address.  
+Explained on the **Router** part on the network equipment.  
+
+### Encapsulation
+The Network Layer receive the **segment** from the Transport Layer and adds its own header which contain the **Source IP Address** and also the **Receiver IP Address** so at the end we got the **Packet**.  
+
+### Header (Packet)
+The most important information are the IP addresses of the source and the destination, but the network layer add many fields into the header :  
+<p align="center">
+	<img src="assets/ipheader.webp" width="400">
+</p>
+
