@@ -155,6 +155,7 @@ The router is a networking device that connect **different Networks** together, 
 	<img src="assets/router3.webp" width="550">
 </p>
 ### Routing Table
+
 **Routers** use **Internet Protocol (IP)** for routing process.  Routers route data by using the routing table which is like a road map of a car, so the data can travel across the internet and reach its destination it needs **directions** to determine how to get there.  
 <p align="center">
 	<img src="assets/destination.webp" width="450">
@@ -211,7 +212,16 @@ The **TCP/IP Model** is the one actually used for the internet and modern networ
 ## Problem the models solved
 Between 1960s and 1970s, computer networks were often closed, for example **IBM** networks could only talk to other IBM networks. If a business bought hardware from different manufactures, those systems **could not** communicate with each other, so they are **forced** to buy all their networking equipment from a single company.   
 
-To solve this problem, the **ISO** (International Organisation for Standardization) developed the **OSI** model in 1984 to create a universal blueprint that all the hardware and software manufacturers could follow. By defining **seven distinct layers**.  
+To solve this problem, the **ISO** (International Organisation for Standardization) developed the **OSI** model in 1984 to create a universal blueprint that all the hardware and software manufacturers could follow. By defining **Seven Layers**.  
+
+### Protocol  
+Protocol is a standardized set of rules between two or more devices so they could communicate with each other,  just as humans speaks a specific language to communicate, also the computers needs protocols to ensure they can correctly format, transmit, receive and interpret the data they exchange. 
+
+Most used protocols :  
++ **HTTP/HTTPS :** Used by web browsers to request and display web pages (Application Layer); 
++ **IP (Internet Protocol) :** Define the addressing system and routes data packets across the entire internet ( Network Layer);  
++ **TCP :** Ensure data is delivered in accurate way, checking errors, resending lost data and ensuring packets arrive in the **correct** order (Transport Layer);   
++ **DNS, FTP, SSH, SMTP ...etc**
 
 ## OSI Model
 
@@ -222,14 +232,17 @@ The **OSI** model standardize the functions of communication system into **Seven
 	<img src="assets/osilayers.webp" width="350">
 </p>
 
+Each layer of the OSI model encapsulate the data by adding a part to the header of the data so when the data arrive to the server it decapsulate  it 
+<p align="center">
+	<img src="assets/datapacket.webp" width="550">
+</p>
+
 ### Application Layer
+#### Definition
 The **application layer** is the primary interface between the user's software application and the network services required to exchange data, it contain the protocols that define the rules for application-level communication, for example when browsing google chrome we use the HTTP protocol to talk across the network.  
+<p align="center">
+	<img src="assets/application.webp" width="550">
+</p>
 
-**What is a protocol ?**  
-Protocols is a standardized set of rules between two or more devices so they could communicate with each other,  just as humans speaks a specific language to communicate, also the computers needs protocols to ensure they can correctly format, transmit, receive and interpret the data they exchange. 
-
-Most used protocols :  
-+ **HTTP/HTTPS :** Used by web browsers to request and display web pages (Application Layer);   
-+ **IP (Internet Protocol) :** Define the addressing system and routes data packets across the entire internet ( Network Layer);  
-+ **TCP :** Ensure data is delivered in accurate way, checking errors, resending lost data and ensuring packets arrive in the **correct** order (Transport Layer);   
-+ **DNS, FTP, SSH, SMTP ...etc**
+#### header
+The application layer encapsulates the data and add to it a header that contain the protocol and information used, still named **data**.    
