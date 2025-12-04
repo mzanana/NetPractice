@@ -354,3 +354,33 @@ The most important information are the IP addresses of the source and the destin
 	<img src="assets/ipheader.webp" width="400">
 </p>
 
+## Data Link Layer
+Responsible for node-to-node data transfer, its job is to provide error-free delivery of data frames between two directly connected nodes over a specific physical link.  
+#### Header (Frame)
+Framing which is encapsulates the packet by adding **Header** and a **Trailer (Footer)** creating a **Frame**  
+<p align="center">
+	<img src="assets/framing.webp" width="400">
+</p>
+#### Physical Addressing
+The Data Link Layer uses **MAC addresses** so the devices on the same local network identify each other so the frame can be delivered to the correct next device.   
+
+#### Error Control
+The Data Link Layer adds a **Frame Check Sequence** in the **Trailer** :  
++ **CRC :** This algorithm generate a checksum based on the data in the frame;  
++ **Check :** The sender calculate the CRC and places it in the trailer, the receiver recalculate the CRC for the received data. if the two values do not match, the receiver knows the frame is corrupted and discards it (error detection). 
+
+
+## Physical Layer
+The physical layer is the lowest layer on the OSI model, it deals with the physical connection between devices. Its role is to translate the digital frame  into a physical signal (electrical, light pulse or radio wave) 
+<p align="center">
+	<img src="assets/Digital.webp" width="400">
+</p>
+
+Physical Layer define the characteristics of the physical paths used for communication, either if it is wired (coaxial cable, fiber optic, ...) or wireless (radio frequency).  Also the Physical Layer deals with the physical layout of the network (star, mesh, bus, ring, ...) ;  
+
+
+## TCP/IP Model
+
+<p align="center">
+	<img src="assets/tcpip.webp" width="400">
+</p>
