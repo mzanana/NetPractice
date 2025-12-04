@@ -1,8 +1,7 @@
 
 <h1 align="center"><b>NetPractice</b></h1>
 
-> **The goal from this project to discover networking.**    
-
+> **As ALWAYS, we won't just work the project! We will explain everything you need to know about Networking. Of course you can go deeper if you want**    
 
 # Definitions
 
@@ -223,7 +222,7 @@ Most used protocols :
 + **TCP :** Ensure data is delivered in accurate way, checking errors, resending lost data and ensuring packets arrive in the **correct** order (Transport Layer);   
 + **DNS, FTP, SSH, SMTP ...etc**
 
-## OSI Model
+# OSI Model
 
 **OSI** Stand for Open System Interconnecting, the purpose of this model to allow different systems to communicate smoothly regardless of their internal architecture, hardware or software.  
 
@@ -237,12 +236,25 @@ Each layer of the OSI model encapsulate the data by adding a part to the header 
 	<img src="assets/datapacket.webp" width="550">
 </p>
 
-### Application Layer
-#### Definition
+## Application Layer
+### Definition
 The **application layer** is the primary interface between the user's software application and the network services required to exchange data, it contain the protocols that define the rules for application-level communication, for example when browsing google chrome we use the HTTP protocol to talk across the network.  
 <p align="center">
 	<img src="assets/application.webp" width="550">
 </p>
 
-#### header
+### header
 The application layer encapsulates the data and add to it a header that contain the protocol and information used, still named **data**.    
+
+## Presentation Layer
+### Definition
+On this Layer we have three steps :  
++ **Translation :**  Converting the data from an application-specific format into a common, **standard** format.
++ **Compression;**
++ **Encryption & Decryption :** 
+<p align="center">
+	<img src="assets/presentationlayer.webp" width="450">
+</p>
+### header
+ Contain the information specifying the **data format** used like JPEG, MP4, PDF ... also metadata necessary to correctly decrypt the incoming data, and then information about the compression algorithm used allowing the receiver to decompress the data correctly.
+ Still named by data.  
