@@ -255,6 +255,24 @@ On this Layer we have three steps :
 <p align="center">
 	<img src="assets/presentationlayer.webp" width="450">
 </p>
+
 ### header
  Contain the information specifying the **data format** used like JPEG, MP4, PDF ... also metadata necessary to correctly decrypt the incoming data, and then information about the compression algorithm used allowing the receiver to decompress the data correctly.
  Still named by data.  
+## Session Layer
+This layer determine the transmission mode :
++ **Simplex mode :** The communication is fixed in one direction, from a sender to the receiver. Example of the keyboard sending input to a monitor;  
++ **Half-duplex mode :**  Data can flow in both directions but not simultaneously. Example of the walkie-talkie;  
++ **Full-duplex mode :**  Also bidirectional but simultaneously. Example of a phone call.  
+<p align="center">
+	<img src="assets/mode.webp" width="450">
+</p>
+This layer also manage the authentication and the authorization.  
+The most important feature it inserts **checkpoints** into the data stream in case the connection fails, the session layer allow the transfer to resume from the last successful checkpoint instead of restarting from scratch.  
+<p align="center">
+	<img src="assets/checkpointing.webp" width="450">
+</p>
+### Header
+Contain the numbers indicating where checkpoints are placed, bits defining the communication mode and which device currently hold the right to transmit.  
+Still named by data.  
+
