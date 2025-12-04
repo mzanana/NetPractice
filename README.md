@@ -291,7 +291,7 @@ Happens only on the TCP! Since the physical networks have a limit on the maximum
 <p align="center">
 	<img src="assets/T1.webp" width="550">
 </p>
-
+#### Header (Segment)
 Each segment is tagged with :  
 + **Source and Destination Ports, data offset, header length ...**  
 <p align="center">
@@ -316,3 +316,18 @@ After finishing the data transfer the **TCP** gracefully closes the connection u
 <p align="center">
 	<img src="assets/tcpdiagram.webp" width="300">
 </p>
+
+### UDP
+#### Definition
+**UDP**  stands for User Datagram Protocol, described as "fire-and-forget", provides a connectionless transport service, it doesn't care about the connection with the server, it just send the data even is some is lost it continue sending the rest.  
+We use UDP when speed is important than absolute accuracy, UDP is much faster than TCP because it avoid the handshakes, sequence numbering and making sure that the data is received well or not.
+#### Header (Datagram)
+The UDP header is extremely simple, it contain only four fields :  
++ **Source Port Number;**  
++ **Destination Port Number;**  
++ **Length** (of the entire datagram) **;**  
++ **Checksum** (optional but used for basic error detection) **;**  
+<p align="center">
+	<img src="assets/udpheader.webp" width="400">
+</p>
+
