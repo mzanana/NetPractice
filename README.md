@@ -284,3 +284,35 @@ The Transport Layer is the one responsible for getting the data to the **correct
 <p align="center">
 	<img src="assets/ports.webp" width="350">
 </p>
+
+### TCP
+#### Segmentation
+Happens only on the TCP! Since the physical networks have a limit on the maximum size of data unit, and we don't want any **data lost**, this layer break the data into smaller chunks suitable for transmission as **segments**.
+<p align="center">
+	<img src="assets/T1.webp" width="550">
+</p>
+
+Each segment is tagged with :  
++ **Source and Destination Ports, data offset, header length ...**  
+<p align="center">
+	<img src="assets/tcpheader.webp" width="350">
+</p>
++ **Sequence Number** Indicate the position of the first byte of data carried by the current segment; Helps also to put the segments back together to build the original data before sending it to the Session Layer.    
++ **Acknowledgment Number** Indicate the next expected byte the receiver wait from the sender;  
+#### Handshake
+Before any data is transferred, TCP make sure both hosts are ready for connection :   
++ **Synchronize :** The client sent the segment proposing the initial sequence number **X** to start communication;  
++ **SYN Acknowledge :** The server reply with a segment includes its own sequence number **Y** and the acknowledge number that equal **X + 1**, so it means am waiting for the next segment.  
++ **Acknowledge :** The client sends a final segment acknowledging the server's sequence number **Y + 1**
+ At this point the connection is established and data transfer can begin!  
+<p align="center">
+	<img src="assets/tranportheader.webp" width="400">
+</p>
+
+**TCP** guarantees that all data arrives in order and without errors using the system of sequence numbers and acknowledgments.  
+The client send a segment and wait the confirmation of the server then continue.  
+If the sender does not receive an **ACK** for a segment within a calculated time period, it assumes the segment was **lost** and **retransmits** it again.  
+After finishing the data transfer the **TCP** gracefully closes the connection using **FIN (Finish)** and **ACK** segments, ensuring both sides agree to stop sending data.  
+<p align="center">
+	<img src="assets/tcpdiagram.webp" width="300">
+</p>
