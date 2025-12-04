@@ -276,3 +276,11 @@ The most important feature it inserts **checkpoints** into the data stream in ca
 Contain the numbers indicating where checkpoints are placed, bits defining the communication mode and which device currently hold the right to transmit.  
 Still named by data.  
 
+## Transport Layer
+This Layer is responsible for data transfer, choosing between **Connection-Oriented** service like **TCP**, and **Connectionless** services like **UDP**.  
+
+### Port Addressing
+The Transport Layer is the one responsible for getting the data to the **correct** application on the destination computer, using the **Port Numbers** which are a 16-bit numbers (0 to 65535) added to the header to identify the specific application process
+<p align="center">
+	<img src="assets/ports.webp" width="350">
+</p>
