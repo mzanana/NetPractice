@@ -499,3 +499,26 @@ This part of the address uniquely identify the **specific device** (the host) wi
 This portion must be unique for every device connected to the same local network.  
 **Analogy :** In our last analogy the host portion would be the **House Number**.  
 Once the data packet has reached the correct network (the street), the Host ID ensure it is delivered to the correct device (the specific house).  
+
+## Subnet Mask
+### Definition 
+The Subnet Mask is a 32-bit number just like the IP address that is logically combined with the IP address.  Its the one responsible to tell the device :"Those bits belong to the **Network ID** and the rest belong to the **Host ID**."  
+It is also written in dotted-decimal notation like : `255.255.255.0`
+
+### Boundary rule
+The Subnet Mask has a strict, unmistakable structure in binary, it is always a **contiguous** string of **ones(1s)** followed be a contiguous of **zeros(0s)**  :  
++ **1s :** This is the **Network Portion** making it mandatory for routing;  
++ **0s :** This is the **Host Portion** to create unique hosts.  
+
+<p align="center">
+	<img src="assets/subnet.webp" width="500">
+</p>
+
+### Classless Inter-Domain Routing (CIDR)
+The **CIDR** notation is simply the IP address  followed by a forward slash and the **prefix length** which is the total count of **Network Bits (the 1s).**    
+For example :  
++ The mask `255.255.255.0` has `8 + 8 + 8` = 24 bits;  
++ Therefore, the IP address `192.168.1.10` is written in CIDR as `192.168.1.10/24`.  
+
+
+
