@@ -431,3 +431,43 @@ Using the division method and then read from the bottom to the top.
 <p align="center">
 	<img src="assets/dectobin.webp" width="350">
 </p>
+
+## IP Address Assignment
+The assignment of the IP addresses is typically handled at three different levels :  
++ **Global Authority :**  The Internet Assigned Numbers Authority (IANA) manage the overall global IP address space. They delegate large blocks of **Public IP Addresses** to Regional Internet Registries (RIRs);  
++ **Regional/ISP Authority :**  The Regional Internet Registries distribute blocks of addresses to Internet Services Providers and large corporations. Your ISP assigns a **Public IP Address** to the home router, this is the network address to the outside world (the internet);   
++ **Local Network Authority :**  Whiting home or office the **router** assigns **Private IP Addresses** to every device inside the home network (laptops, phones. smart TVs ...etc)
+<p align="center">
+	<img src="assets/iana.webp" width="400">
+</p>
+
+### Local IP assignment (Private IP address)
+
+Those methods manages the addresses for devices insides the home network :  
+#### DHCP (Dynamic Host Configuration Protocol)
+The Dynamic IP Assignment **DHCP** is the most common method. The IP address is assigned **automatically** and is temporary (it has a lease time).  
+The server of the DHCP in my home network is the **router**, its manages  a pool of available IP addresses given by the ISP.  
+<p align="center">
+	<img src="assets/dhcpserver.webp" width="400">
+</p>
+
+##### How DHCP Works ?
+Based on the **DORA** Process, four steps :  
++ **Discover :** When a device turns on, it broadcasts a **DHCP Discover** request :"Is there a DHCP server? I need an IP address!";  
++ **Offer :** The DHCP server responds with the **DHCP Offer** suggesting an available IP address;  
++ **Request :** The device accept the offer and send a **DHCP Request**;  
++ **Acknowledge :** The server sends a final **DHCP Acknowledge** message, finalizing the lease time and also giving the device other essential details like the **Subnet Mask** and **Default Gateway**;  
+<p align="center">
+	<img src="assets/dhcpdora.webp" width="700">
+</p>
+
+##### Why using DHCP?
++ **Simplicity :** No manual configuration is needed;  
++ **Efficiency :** It prevents **IP conflicts** where two devices accidentally use the same address;  
++ **Scalability :** Perfect for networks where devices frequently join and leave (like Coffee Wi-Fi);  
+
+#### Static IP Assignment (Manual)
+The **IP** address being **fixed** and manually configured by a network administrator or user. It been configured for the devices that has the same location every time, for example :  
++ **Servers :** Web Servers, File Servers, Mail servers;   
++ **Network Equipment :** Routers, switches and wireless access points;  
+
