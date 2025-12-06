@@ -521,4 +521,28 @@ For example :
 + Therefore, the IP address `192.168.1.10` is written in CIDR as `192.168.1.10/24`.  
 
 
+## Classful Addressing
+Before the (CIDR) system which is modern and flexible, IP addresses were governed by a structure not flexible called **Classful Addressing**.  
+This old system automatically determined the boundary between the **Network** and **Host** portions based solely on the value of the **first octet** of the IP address.  
+<p align="center">
+	<img src="assets/classful.webp" width="650">
+</p>
+
+### The Three Primary Classes
++ **Class A :**  (Massive Network)! Very few networks, but each network can support over **16 million** unique hosts;  
++ **Class B :** (Large Networks)! A moderate number of networks, each supporting up to **65534** unique hosts;  
++ **Class C :** (Small Networks)! A massive number of networks, but each network is limited to a maximum of **254** unique hosts.  
+
+### Other Classes
+There are also two more Classes :  
++ **Class D (224-239):** Reserved for **Multicasting** which is used for sending a single stream of data (like a video conference) to a select group of multiple recipients simultaneously;  
++ **Class E (240-255):** Reserved for **Experimental** use and generally not used on the public internet.
+
+### Why the Classful System is not longer used
+The Classful System was very inefficient and led to rapid depletion of IP Addresses :  
++ **Wasteful Allocation :** If an organisation needed 500 hosts, they couldn't use a Class C (max 254 hosts). They were force to take an entire Class B network, wasting over 64000 addresses.  
++ **Inflexible Boundaries :** The network/host boundary was fixed (at 8, 16, 24 bits) and could not be adjusted to fit the actual size of the organization.  
+
+### Solution 
+The inefficiency of the Classful System led to development of the flexible system we use now, which allows us to borrow bits between the network and host portion (**this process is called SUBNETTING**) and the current system called **CIDR**.  
 
