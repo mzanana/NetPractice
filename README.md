@@ -384,3 +384,19 @@ Physical Layer define the characteristics of the physical paths used for communi
 <p align="center">
 	<img src="assets/tcpip.webp" width="400">
 </p>
+
+# IPv4 Addressing  
+
+This addressing happen on the Layer 3 the Network Layer, we saw earlier this layer make the addressing which add the source and destination IP addresses to the Data came from Transport Layer .  
+
+## IP (Internet Protocol)
+**IP** is not the address itself; it is the primary protocol that operate the Network Layer.  When we say protocol that means its a set of rules that governs the format of data packets.  
+The **IP** takes the segment/datagram from the Transport Layer and add the **IP Header** which contain the source and destination IP addresses, creating the **IP Packet**.  
+
+## Basics of IP Address
+### What is an IP Address
+The **IP address** is a numerical label assigned to every device participating in a computer network that uses the Internet Protocol to communicate.  
+Think of it like a street address so the mail service could deliver a letter, network services like web browsers or email need an IP Address to send data to the correct computer.  
+<p align="center">
+	<img src="assets/ipaddress.webp" width="450">
+</p>
