@@ -400,3 +400,34 @@ Think of it like a street address so the mail service could deliver a letter, ne
 <p align="center">
 	<img src="assets/ipaddress.webp" width="450">
 </p>
+
+### What is the purpose of the IP Address
+The IP Address serve two primary functions :
++ **Identification :**  So each device on the network will have a unique IP address even if two devices with the same name they got two different IP addresses;  
+
++ **Location (Addressing) :**  The IP Address provides the necessary location information for routing data. Routers reads this address to determine the best path to forward data packet to its destination.  
+
+### The format of an IPv4 Address
+The IPv4 Address is a **32-bit number** written in dotted-decimal notation which look like : 
+**A . B . C . D**  
+
+<p align="center">
+	<img src="assets/ipformat.png" width="350">
+</p>
+
+The 32 bits are divided into 4 sections of 8 bits (one octet) each, so the rang from `0` to `255` for each octet  
+
+We see `17.172.224.47` but the computer see `10001101011001110000000101111`  
+#### Conversion binary to decimal 
+We simply add the values of the positions where the bit is `1` :  
+<p align="center">
+	<img src="assets/bintodec.png" width="400">
+</p>
+
+So Here the binary `11000000` = `128 + 64` = `192` in decimal.  
+
+#### Conversion decimal to binary
+Using the division method and then read from the bottom to the top.  
+<p align="center">
+	<img src="assets/dectobin.webp" width="350">
+</p>
