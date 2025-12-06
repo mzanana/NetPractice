@@ -153,12 +153,14 @@ The router is a networking device that connect **different Networks** together, 
 	<br>
 	<img src="assets/router3.webp" width="550">
 </p>
+
 ### Routing Table
 
 **Routers** use **Internet Protocol (IP)** for routing process.  Routers route data by using the routing table which is like a road map of a car, so the data can travel across the internet and reach its destination it needs **directions** to determine how to get there.  
 <p align="center">
 	<img src="assets/destination.webp" width="450">
 </p>
+
 There are three routing types :  
 + **Directly Connected :**  Lets say we connect two networks separated by a router, each one with a specific **IP** address, the router will create automatically the router table with the directly connected routes.  
   When a computer on a `192` network want to connect with a computer on a `10` network, the computer sent a data packet to the router, and the router looks for the destination IP address of the packet, the router looks at the routing table and decide to forward the data out the interface  `Eth1` then to the intended computer.  
@@ -171,7 +173,8 @@ There are three routing types :
 	<p align="center">
 		<img src="assets/static.webp" width="550">
 	</p>
-+ **Dynamic routes :** Are similar to the static routes the way it works, the difference is how the routing table is filled, on static routes we fill the table manually but on the dynamic routes we use some protocols so the routing table fill itself automatically, some protocols are : `RIP, OSPF, BGP, IS-IS and EIGPR`.
+
++**Dynamic routes :** Are similar to the static routes the way it works, the difference is how the routing table is filled, on static routes we fill the table manually but on the dynamic routes we use some protocols so the routing table fill itself automatically, some protocols are : `RIP, OSPF, BGP, IS-IS and EIGPR`.
   So what happen is the routers talk with each other and share their routing tables with each other.  
 ### How the Router works
 + **Determining the best path :**  When a data packet arrives, the router gets the destination IP address from the header of the packet, then it consult the **routing table** which is a map of network paths to determine the most efficient route and to forward the packet closer to its final destination.  
@@ -183,6 +186,7 @@ A wireless access point **relays** data between a wired network and wireless dev
 	<p align="center">
 		<img src="assets/wap1.webp" width="450">
 	</p>
+
 **Wireless APs** are used primarily by medium and large organisations, they have multiple APs to make sure it covers the entire building
 
 ## Bridge
@@ -231,6 +235,7 @@ The **OSI** model standardize the functions of communication system into **Seven
 	<img src="assets/osilayers.webp" width="350">
 </p>
 
+
 Each layer of the OSI model encapsulate the data by adding a part to the header of the data so when the data arrive to the server it decapsulate  it 
 <p align="center">
 	<img src="assets/datapacket.webp" width="550">
@@ -267,11 +272,13 @@ This layer determine the transmission mode :
 <p align="center">
 	<img src="assets/mode.webp" width="450">
 </p>
+
 This layer also manage the authentication and the authorization.  
 The most important feature it inserts **checkpoints** into the data stream in case the connection fails, the session layer allow the transfer to resume from the last successful checkpoint instead of restarting from scratch.  
 <p align="center">
 	<img src="assets/checkpointing.webp" width="450">
 </p>
+
 ### Header
 Contain the numbers indicating where checkpoints are placed, bits defining the communication mode and which device currently hold the right to transmit.  
 Still named by data.  
@@ -291,12 +298,14 @@ Happens only on the TCP! Since the physical networks have a limit on the maximum
 <p align="center">
 	<img src="assets/T1.webp" width="550">
 </p>
+
 #### Header (Segment)
 Each segment is tagged with :  
 + **Source and Destination Ports, data offset, header length ...**  
 <p align="center">
 	<img src="assets/tcpheader.webp" width="350">
 </p>
+
 + **Sequence Number** Indicate the position of the first byte of data carried by the current segment; Helps also to put the segments back together to build the original data before sending it to the Session Layer.    
 + **Acknowledgment Number** Indicate the next expected byte the receiver wait from the sender;  
 #### Handshake
@@ -361,6 +370,7 @@ Framing which is encapsulates the packet by adding **Header** and a **Trailer (F
 <p align="center">
 	<img src="assets/framing.webp" width="400">
 </p>
+
 #### Physical Addressing
 The Data Link Layer uses **MAC addresses** so the devices on the same local network identify each other so the frame can be delivered to the correct next device.   
 
@@ -471,3 +481,21 @@ The **IP** address being **fixed** and manually configured by a network administ
 + **Servers :** Web Servers, File Servers, Mail servers;   
 + **Network Equipment :** Routers, switches and wireless access points;  
 
+## IPv4 Structure
+Every IPv4 address must serve a dual purpose :  
++ Identifying the **location** of the network;  
++ Identifying the **specific device** which is the host.  
+<p align="center">
+	<img src="assets/ipportion.webp" width="400">
+</p>
+
+### The Network Portion (Network ID)
+Every single device connected to the same local network **must** share an identical Network portion. This Network Portion of the address identifies the **network** itself. its job is to group all the devices that belong to the same local area;  
+**Analogy :** If the IPv4 address is an address on a letter, the Network Portion would be the **City** and the **Street Name**.   
+Data packets are routed based on this part to get them close to the destination.   
+
+### The Host Portion (Host ID)
+This part of the address uniquely identify the **specific device** (the host) within that Network. 
+This portion must be unique for every device connected to the same local network.  
+**Analogy :** In our last analogy the host portion would be the **House Number**.  
+Once the data packet has reached the correct network (the street), the Host ID ensure it is delivered to the correct device (the specific house).  
