@@ -442,7 +442,30 @@ Using the division method and then read from the bottom to the top.
 	<img src="assets/dectobin.webp" width="350">
 </p>
 
-## IP Address Assignment
+## Public/Private Address && IP Address Assignment 
+IP Addresses are divided into two main types, based on where they are used :  
+<p align="center">
+	<img src="assets/iptypes.webp" width="500">
+</p>
+
+### Public IP Addresses
+A Public IPv4 Address is an address that is **Globally unique** that is Routable on the internet, allowing the internet (like a web server in another country) to send data back to your specific network.  
+Public IP Address is your network's unique identity to the outside world.  
+
+### Private IP Addresses
+Is an Address reserved for use exclusively within a private, internal Network (LAN), they are not routable on the public internet. Used by all the devices on the private network from laptops, phones, printers, etc.  
+Private IP Addresses allow millions of people in the world to use the same address like `192.168.1.1` because the networks are separate.  
+
+### NAT(Network Address Translation)
+If the internal network devices use Private IPs, how do they access a public website?  
+They use a technique performed by the router called  **NAT** which stand for  **Network Address Translation**   
+This technique swap the private source IP (`192.168.1.1`) with the router'r single Public IP Address(`203.0.113.5`) by rewriting the IP Address in the packet header as traffic passes through.  
+
+<p align="center">
+	<img src="assets/nat.webp" width="500">
+</p>
+
+### IP Address Assignment  
 The assignment of the IP addresses is typically handled at three different levels :  
 + **Global Authority :**  The Internet Assigned Numbers Authority (IANA) manage the overall global IP address space. They delegate large blocks of **Public IP Addresses** to Regional Internet Registries (RIRs);  
 + **Regional/ISP Authority :**  The Regional Internet Registries distribute blocks of addresses to Internet Services Providers and large corporations. Your ISP assigns a **Public IP Address** to the home router, this is the network address to the outside world (the internet);   
