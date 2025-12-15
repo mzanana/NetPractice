@@ -599,3 +599,34 @@ So subnets increment by 64 in that octet :
 + `192.168.10.128/26` : hosts.129-.190 and broadcast .191 and network is .128   
 + `192.168.10.192/26` : hosts.191-.254 and broadcast .255 and network is .192   
 
+# VLSM  
+### VLSM Workflow  
+VLSM means different subets can have different sizes depending on need, because if we allocate everything as equal-size we just waste addresses.   
+The workflow :  
++ List required subnets by host count (largest first);  
++ Choose the smallest prefix that fits each;  
++ Allocate sequentially from the bigger parent block;  
++ Keep boundaries aligned to block sizes;  
+
+Example :  
+We have `192.168.1.0/24` and we need :  
++ 100 hosts (office LAN);  
++ 50 hosts (WiFi);  
++ 10 hosts (Servers);  
++ 2 hosts (Point to point link);  
+
+Allocation :  
++ For 100 host we need 128 addresses which is the `/25` : the subnet `192.168.1.0/25` could handle between IPs 0-127 Office;  
++ For the 50 WiFi devices we need at least 64 addresses which is on the `/26` subnet mask : `192.168.1.128/26` that can handle between IPs 128 and 191;  
++ For the servers we need at least 16 addresses, so we gonna use the mask address `/28` and the ips : `192.168.1.192/28`;  
++ For the P2P we need only 4 addresses so we use the `/30` mask address which gives us the IPs `192.168.1.208/30` with the range of 208-211;  
+
+### Common Prefix Sizes 
++ `/24` -> 256 addresses;  
++ `/25` -> 128 addresses;  
++ `/26` -> 64 addresses;  
++ `/27` -> 32 addresses;  
++ `/28` -> 16 addresses;  
++ `/29` -> 18 addresses;  
++ `/30` -> 4 addresses;  
+
