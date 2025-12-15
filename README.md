@@ -569,3 +569,14 @@ The Classful System was very inefficient and led to rapid depletion of IP Addres
 ### Solution 
 The inefficiency of the Classful System led to development of the flexible system we use now, which allows us to borrow bits between the network and host portion (**this process is called SUBNETTING**) and the current system called **CIDR**.  
 
+# Subnetting  
+
+### Definition 
+Subnetting is the process of taking one IP network and **splitting** it into smaller IP networks by borrowing bits from the host portion and add them to the network portion, this splits one large network into multiple smaller networks called **subnets**.  
+
+<p align="center">
+	<img src="assets/subnetting.webp" width="450">
+</p>
+
+### CIDR
+**Subnetting** is the foundation of the **CIDR** (Classless INter-Domain Routing). So instead of being stuck with the rigid `255.255.255.0` mask (Class C), it allows you to use any prefix length (like `/25`, `26`) to create subnets of the exact size needed, maximizing efficiency and saving addresses.  
