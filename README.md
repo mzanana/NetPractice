@@ -580,3 +580,22 @@ Subnetting is the process of taking one IP network and **splitting** it into sma
 
 ### CIDR
 **Subnetting** is the foundation of the **CIDR** (Classless INter-Domain Routing). So instead of being stuck with the rigid `255.255.255.0` mask (Class C), it allows you to use any prefix length (like `/25`, `26`) to create subnets of the exact size needed, maximizing efficiency and saving addresses.  
+
+### The 3 Special Addresses 
+For every subnet we have :  
++ **Network Address :**  which identify the subnet itself, it is the address where **all** hosts bits are set to **0**;    
++ **Broadcast Address :**  Used to send a packet to **all** hosts in the subnet, it is the address where all host bits are set to **1**;  
++ **Usable host range :** These are only addresses allowed for hosts, routers and gatewats;  
+
+### Block size
+This is the fastest way to fid subnet boundaries quickly in dotted decimal :  
+**Block Size =** `256 - (Mask Value in the subnetted octet)`;  
+Example `/26` mask is `255.255.255.192`, the subnetted octet is the last one : `192`.  
+Block Size = 256 - 192 = **64**  
+
+So subnets increment by 64 in that octet :  
++ `192.168.10.0/26` : hosts.1-.62 and broadcast .63 and network is .0   
++ `192.168.10.64/26`: hosts.65-.126 and broadcast .127 and network is .64   
++ `192.168.10.128/26` : hosts.129-.190 and broadcast .191 and network is .128   
++ `192.168.10.192/26` : hosts.191-.254 and broadcast .255 and network is .192   
+
