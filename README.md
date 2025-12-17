@@ -587,7 +587,7 @@ For every subnet we have :
 + **Broadcast Address :**  Used to send a packet to **all** hosts in the subnet, it is the address where all host bits are set to **1**;  
 + **Usable host range :** These are only addresses allowed for hosts, routers and gatewats;  
 
-### Block size
+### Block size  
 This is the fastest way to fid subnet boundaries quickly in dotted decimal :  
 **Block Size =** `256 - (Mask Value in the subnetted octet)`;  
 Example `/26` mask is `255.255.255.192`, the subnetted octet is the last one : `192`.  
